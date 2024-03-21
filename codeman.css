@@ -38,6 +38,14 @@
 	  overflow: hidden;
 }
 
+p.author {
+	width:100%;
+    padding-left: auto;
+    padding-right: auto;
+    font: 0.5em Arial, Helvetica, serif;
+    text-align: center;
+}
+
 .header-row h1 {
 	margin-top:1.8em;
 }
@@ -48,10 +56,6 @@
 
 .header-row dd {
 	padding-left:1.5em;
-}
-
-.grid-container .grid-item.JENO h2 {
-    font-variant: inherit;
 }
 
 /* styling til JENOS felt */
@@ -78,4 +82,3 @@
 	line-height:1;
 	color:gold;
 }
-/* slut på styling af JENOs felt */ 
