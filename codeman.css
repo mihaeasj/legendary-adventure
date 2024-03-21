@@ -1,31 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
 * {
-	margin: 0;
+	margin:0;
 	padding:0;
 }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto repeat(9, 1fr); 
-    gap: 5px;
-    width: 975px; /* gl standard for fuld side og god læsebredde */
-    height: auto; 
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto auto repeat(9, 1fr); 
+	gap: 5px;
+	width: 975px; /* gl standard for fuld side og god læsebredde. Ingen grund til at lave responsive web for denne opgave*/
+	height: auto; 
 	margin-top:0;
 	margin-left: auto;
 	margin-right:auto;
-  }
+}
 
-  .grid-item {
-    background-color: #ccc;
-    border: 1px solid #eee;
-    text-align: center;
-    line-height: 50px; /* Adjust as needed for content alignment */
-    border-radius: 8px; /* Rounded corners */
-    overflow: hidden; /* Ensure rounded corners are applied */
-  }
+.grid-item {	
+	background-color: #ccc;
+	border: 1px solid #eee;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 8px; 
+	overflow: hidden; 
+}
+
+.header-row {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	  background-image:linear-gradient(to bottom right,#FEA9E4, #C078AA, #C3D84B);
+	  color: #fff;
+	  grid-column: span 4; 
+	  text-align: left;
+	  padding: 10px;
+	  border-radius: 8px;
+	  overflow: hidden;
+}
 	
-  .grid-item.JENO {
+.grid-item.JENO {
 	padding:10px;
 	text-align: center;
 	line-height:1;
@@ -37,19 +49,7 @@
 	background-image:repeating-radial-gradient(red, orange, yellow, pink);
 	overflow:hidden;
 	height:38px;
-	
 	}
-
-  .header-row {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    background-image:linear-gradient(to bottom right,#FEA9E4, #C078AA, #C3D84B);
-    color: #fff;
-    grid-column: span 4; /* Span across all columns */
-    text-align: left;
-    padding: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
 
 .header-row h1 {
 	margin-top:1.8em;
@@ -58,6 +58,7 @@
 .header-row:has(h1) {
 	border-radius: 0 0 8px 8px; 
 }
+
 .header-row dd {
-	padding-left:1em;
+	padding-left:1.5em;
 }
