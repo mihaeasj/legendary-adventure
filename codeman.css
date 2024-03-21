@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto repeat(9, 1fr); 
+    gap: 5px;
+    width: 975px; /* gl standard for fuld side og god læsebredde */
+    height: auto; 
+	margin-left: auto;
+	margin-right:auto;
+  }
+
+  .grid-item {
+    background-color: #ccc;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 50px; /* Adjust as needed for content alignment */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are applied */
+  }
+	
+  .grid-item.JENO {
+	padding:10px;
+	text-align: center;
+	line-height:1;
+	border-color:fuchsia;
+	color:#fff;
+	font-family: Times, "Times New Roman", "serif";
+	font-size: 32px;
+	font-weight:bold;
+	background-image:repeating-radial-gradient(red, orange, yellow, pink);
+	overflow:hidden;
+	height:38px;
+	
+	}
+
+  .header-row {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    background-image:linear-gradient(to bottom right,#FEA9E4, #C078AA, #C3D84B);
+    color: #fff;
+    grid-column: span 4; /* Span across all columns */
+    text-align: left;
+    padding: 0 10px;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners are applied */
+  }
