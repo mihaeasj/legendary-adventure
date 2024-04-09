@@ -90,3 +90,9 @@ p.author {
 	line-height:1;
 	color:gold;
 }
+
+.grid-item.mads46q8 p {
+	background-color: #4688;
+	font: 12px;
+	border: 2px solid red;
+}
