@@ -67,6 +67,14 @@ p.author {
 	height:58px;
 	text-align: center;
 	}
+	.grid-item.xiao0581 {
+		padding:10px;
+		background-image:repeating-radial-gradient(rgb(0, 30, 255), rgb(113, 112, 120), rgb(255, 0, 81), pink);
+		border: 2px solid fuchsia;
+		overflow:hidden;
+		height:58px;
+		text-align: center;
+		}
 
 .grid-item.JENO p {
 	line-height:0.5;
